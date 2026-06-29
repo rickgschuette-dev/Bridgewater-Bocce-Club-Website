@@ -1,0 +1,16 @@
+# Netlify configuration for Bridgewater Bocce Club website
+
+[build]
+  publish = "."        # All files are in the root — no build step needed
+
+# Redirect root to index.html (standard for single-page static sites)
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
+
+# Form notification: Netlify captures submissions automatically.
+# To enable email alerts to aquasteve@aol.com, go to:
+#   Netlify Dashboard → Your Site → Forms → Notifications → Add Email Notification
+#   Form name to select: "member-update"
+#   Recipient: aquasteve@aol.com
